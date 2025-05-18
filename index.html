@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Periodic Table</title>
+  <link rel="stylesheet" href="updated_style.css" />
+</head>
+<body>
+  <main id="main-container">
+  <h1>Interactive Periodic Table</h1>
+
+  <div id="filter-container">
+    <select id="categoryFilter">
+      <option value="">-- Select a category --</option>
+      <option value="nonmetal">Nonmetal</option>
+      <option value="noble-gas">Noble Gas</option>
+      <option value="alkali-metal">Alkali Metal</option>
+      <option value="alkaline-earth">Alkaline Earth</option>
+      <option value="metalloid">Metalloid</option>
+      <option value="halogen">Halogen</option>
+      <option value="post-transition">Post-transition</option>
+      <option value="transition-metal">Transition Metal</option>
+      <option value="lanthanide">Lanthanoid</option>
+      <option value="actinide">Actinoid</option>
+    </select>
+  </div>
+
+  <div id="table"></div>
+
+  <!-- Popup container -->
+  <div id="popup" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="filtered-elements"></div>
+    </div>
+  </div>
+  </main>
+
+  <script src="updated_script.js"></script>
+</body>
+</html>
